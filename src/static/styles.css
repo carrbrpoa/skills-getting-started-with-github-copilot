@@ -83,6 +83,21 @@ activity-card {
   margin-bottom: 8px;
 }
 
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  color: #555; /* Slightly lighter color for participant names */
+}
+
+body.dark-mode .activity-card ul li {
+  color: #ccc; /* Adjusted color for dark mode */
+}
+
 .form-group {
   margin-bottom: 15px;
 }
