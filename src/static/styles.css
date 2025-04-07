@@ -15,6 +15,11 @@ body {
   background-color: #f5f5f5;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0; /* Adjusted to a slightly darker gray for better contrast */
+}
+
 header {
   text-align: center;
   padding: 20px 0;
@@ -22,6 +27,10 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+header.dark-mode {
+  background-color: #333;
 }
 
 header h1 {
@@ -57,7 +66,7 @@ section h3 {
   color: #1a237e;
 }
 
-.activity-card {
+activity-card {
   margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -110,6 +119,24 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+button#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button#dark-mode-toggle:hover {
+  background-color: #1a237e;
 }
 
 .message {
